@@ -1,0 +1,39 @@
+.component-todos .item {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.component-todos .item.line-through .text{
+    text-decoration: line-through;
+    color: #bdb1b1;
+}
+
+.component-todos .checkbox {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.component-todos .text {
+    flex: 1;
+}
+
+.component-todos .close {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #ee5d5d;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; 
+}
+
+.component-todos .close:hover {
+    transform: scale(1.5);
+}

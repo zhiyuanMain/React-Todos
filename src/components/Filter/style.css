@@ -1,0 +1,37 @@
+.component-filter {
+    padding: 10px 0;
+}
+
+.component-filter .filter {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.component-filter .filter .link {
+    position: relative;
+    padding: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.component-filter .filter .link.active {
+    color: #0599ff;
+    cursor: default;
+}
+
+.component-filter .filter .link:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.component-filter .filter .link.active:after {
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #0599ff;
+}
